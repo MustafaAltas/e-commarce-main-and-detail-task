@@ -25,7 +25,7 @@ function StockAmount({stock}) {
   return (
     <section className='amount'>
       <button onClick={decrease}><AiOutlineMinus/></button>
-      <h2>{amount}</h2>
+      <h5>{amount}</h5>
       <button onClick={increase}><AiOutlinePlus/></button>
       <p>(Stock Amount : {stock})</p>
     </section>

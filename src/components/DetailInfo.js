@@ -14,12 +14,11 @@ function DetailInfo({ details }) {
   return (
     <aside>
       <article>
-        <h1>{name}</h1>
+        <h2>{name}</h2>
         <h3>{formatPrice(price)}</h3>
         <h6>{category}</h6>
       </article>
       <Rating rating={rating} reviews={reviews} />
-      <hr />
       <article>
         <h5>Ürün Açıklaması</h5>
         <p>{description}</p>

@@ -4,7 +4,7 @@
     align-items: center;
     gap: 1rem;
 }
-.amount h2 {
+.amount h5 {
     font-family: 'Roboto', sans-serif;
 }
 .amount button{
@@ -17,4 +17,7 @@
     padding: 1rem 0;
     width: 2rem;
     height: 1rem;
+}
+.amount p {
+    font-size: 0.8rem;
 }

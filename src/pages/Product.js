@@ -38,7 +38,7 @@ function Product() {
 
   return (
     <Box sx={{ width: "75%", margin: "5rem auto" }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {products.map((product) => {
           return (
             <Grid item xs={12} sm={6} md={3} key={product.id}>

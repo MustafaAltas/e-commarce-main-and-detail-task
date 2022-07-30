@@ -4,7 +4,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-
+import "./style/productsize.css"
 export default function ProductSize({ size }) {
   const [selectSize, setSelectSize] = React.useState("");
 
@@ -13,15 +13,16 @@ export default function ProductSize({ size }) {
   };
 
   return (
-    <Box sx={{ minWidth: 200 }}>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Size</InputLabel>
+    <Box >
+      <FormControl variant="standard" sx={{minWidth: 150}}>
+      <InputLabel id="demo-simple-select-standard-label">Size</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
+          labelId="demo-simple-select-standard-label"
+          id="demo-simple-select-standard"
           value={selectSize}
-          label="Age"
+          label="Size"
           onChange={handleChange}
+          
         >
           {size?.map((item, index) => {
             return <MenuItem value={item} key={index}>{item}</MenuItem>;
