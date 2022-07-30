@@ -1,10 +1,11 @@
 import React from "react";
-import "./style/addtocard.css"
+import Button from '@mui/material/Button';
+
 
 function AddToCart() {
   return (
-    <div>
-      <button class="custom-btn btn-13">Add To Card</button>
+    <div style={{marginTop:"1rem"}}>
+      <Button variant="contained">Add To Card</Button>
     </div>
   );
 }
