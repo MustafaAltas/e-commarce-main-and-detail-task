@@ -41,8 +41,8 @@ function Product() {
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {products.map((product) => {
           return (
-            <Grid item xs={12} sm={6} md={3}>
-              <CardComp key={product.id} product={product}/>
+            <Grid item xs={12} sm={6} md={3} key={product.id}>
+              <CardComp product={product}/>
             </Grid>
           );
         })}

@@ -6,7 +6,7 @@ import {useSelector} from "react-redux";
 
 export default function LoadingComp() {
     const {products_loading} = useSelector(state => state.ProductReducer);
-    console.log(products_loading);
+
 
 
   return (
