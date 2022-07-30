@@ -1,0 +1,42 @@
+.card {
+  background-color: rgba(255,255,255,0.5);
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+}
+.link svg {
+  font-size: 1.25rem;
+  color: black;
+}
+
+.card:hover .link {
+  opacity: 1;
+}
+.card:hover img {
+  opacity: 0.5;
+}
+.card p {
+    font-family: 'Roboto', sans-serif;
+}
+.card h4{
+    font-family: 'Roboto', sans-serif;
+}
