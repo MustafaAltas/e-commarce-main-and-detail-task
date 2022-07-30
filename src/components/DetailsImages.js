@@ -17,7 +17,7 @@ function DetailsImages({ image }) {
       <section className="images-select">
         {image?.map((item) => {
           return (
-            <img src={item?.url} alt="" onClick={() => selectImage(item?.id)} />
+            <img src={item?.url} alt="" onClick={() => selectImage(item?.id)} key={item.id}/>
           );
         })}
       </section>

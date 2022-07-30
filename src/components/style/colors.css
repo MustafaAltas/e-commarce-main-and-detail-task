@@ -1,0 +1,28 @@
+.colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.color-btn{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-btn svg{
+    font-size: 0.75rem;
+    color: white;
+}
+
+.active{
+    opacity: 1;
+}
