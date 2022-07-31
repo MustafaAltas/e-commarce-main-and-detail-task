@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.navbar img{
+    width: 100px;
+    height: 100px;
+}
+.navbar svg{
+    font-size: 2rem;
+}

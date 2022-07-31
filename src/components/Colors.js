@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style/colors.css";
 import { FaCheck } from "react-icons/fa";
 import styled from "styled-components";
+
 const Wrapper = styled.section`
   display: flex;
   justify-content: space-between;
