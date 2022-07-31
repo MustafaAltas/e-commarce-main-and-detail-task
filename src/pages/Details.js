@@ -28,7 +28,7 @@ function Details() {
   }, []);
 
   if (details_loading) {
-    return <h3>Loading...</h3>;
+    return <h3 style={{textAlign:"center"}}>Loading...</h3>;
   }
 
   return (

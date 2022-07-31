@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import "./style/colors.css";
 import { FaCheck } from "react-icons/fa";
-
+import styled from "styled-components";
+const Wrapper = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:0.5rem;
+`
 function Colors({ color }) {
   const [selectColor, setSelectColor] = useState(color[0]);
 
   return (
-    <section className="colors">
+    <Wrapper>
         <p>Color : </p>
       {color?.map((item, index) => {
         return (
@@ -15,7 +21,7 @@ function Colors({ color }) {
           </button>
         );
       })}
-    </section>
+    </Wrapper>
   );
 }
 
